@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="converter-panel" id="main-box">
+        <h1 class="converter-title" id="converter-title">Unit Converter</h1>
+
+        <div class="converter-card length-card" data-unit="length">
+          <label class="converter-label" for="length-input">Length</label>
+          <input class="converter-input" id="length-input" type="text" name="length" />
+        </div>
+
+        <div class="converter-card mass-card" data-unit="mass">
+          <label class="converter-label" for="mass-input">Mass</label>
+          <input class="converter-input" id="mass-input" type="text" name="mass" />
+        </div>
+
+        <div class="converter-card currency-card" data-unit="currency">
+          <label class="converter-label" for="currency-input">Currency</label>
+          <input class="converter-input" id="currency-input" type="text" name="currency" />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
