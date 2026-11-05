@@ -12,18 +12,36 @@
         <h1 class="converter-title" id="converter-title">Unit Converter</h1>
 
         <div class="converter-card length-card" data-unit="length">
-          <label class="converter-label" for="length-input">Length</label>
-          <input class="converter-input" id="length-input" type="text" name="length" />
+          <div class="converter-label-group" aria-label="Length conversion">
+            <span class="converter-label">Meter</span>
+            <span class="converter-arrow">to</span>
+            <span class="converter-target">Feet</span>
+          </div>
+
+          <input class="converter-input" id="length-input" type="number" name="length" placeholder="Enter value" />
+          <input class="converter-input result-input" id="length-output" type="number" name="length-output" placeholder="Result" readonly />
         </div>
 
         <div class="converter-card mass-card" data-unit="mass">
-          <label class="converter-label" for="mass-input">Mass</label>
-          <input class="converter-input" id="mass-input" type="text" name="mass" />
+          <div class="converter-label-group" aria-label="Mass conversion">
+            <span class="converter-label">kg</span>
+            <span class="converter-arrow">to</span>
+            <span class="converter-target">Pound</span>
+          </div>
+
+          <input class="converter-input" id="mass-input" type="number" name="mass" placeholder="Enter value" />
+          <input class="converter-input result-input" id="mass-output" type="number" name="mass-output" placeholder="Result" readonly />
         </div>
 
         <div class="converter-card currency-card" data-unit="currency">
-          <label class="converter-label" for="currency-input">Currency</label>
-          <input class="converter-input" id="currency-input" type="text" name="currency" />
+          <div class="converter-label-group" aria-label="Currency conversion">
+            <span class="converter-label">USD</span>
+            <span class="converter-arrow">to</span>
+            <span class="converter-target">EUR</span>
+          </div>
+
+          <input class="converter-input" id="currency-input" type="number" name="currency" placeholder="Enter value" />
+          <input class="converter-input result-input" id="currency-output" type="number" name="currency-output" placeholder="Result" readonly />
         </div>
       </div>
     </div>
